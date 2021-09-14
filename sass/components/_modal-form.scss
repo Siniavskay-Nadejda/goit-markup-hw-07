@@ -52,10 +52,10 @@ textarea {
   height: 120px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-textarea:hover,
-textarea:focus {
-  border-color: $accent-text-color;
+  &:hover,
+  &:focus {
+    border-color: $accent-text-color;
+  }
 }
 
 .form {
@@ -171,11 +171,12 @@ textarea:focus {
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.form-button:hover,
-.form-button:focus {
+  &:hover,
+&:focus {
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
 }
+}
+
 .form-fild-coment {
   margin-bottom: 20px;
   height: 138px;

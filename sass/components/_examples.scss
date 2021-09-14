@@ -40,7 +40,7 @@
 }
 .work-examples__element {
   margin-right: 30px;
-}
-.work-examples__element:last-child {
-  margin-right: 0px;
+  &:last-child {
+    margin-right: 0px;
+  }
 }

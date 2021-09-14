@@ -9,10 +9,11 @@
 
 .link-mail {
   display: inline-block;
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
-.link-mail:not(:last-child) {
-  margin-bottom: 9px;
-}
+
 .addres-footer {
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -33,9 +34,9 @@
 }
 .footer-flex {
   display: flex;
-}
-.footer-flex:not(:first-child) {
-  margin-left: 70px;
+  &:not(:first-child) {
+    margin-left: 70px;
+  }
 }
 
 .footer-title {
@@ -119,6 +120,9 @@
 }
 .social__element {
   display: flex;
+  &:not(:last-child) {
+  margin-right: 10px;
+}
 }
 
 .social__link--color {
@@ -131,14 +135,12 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border-radius: 100px;
+    background-color: #2196f3;
+    fill: #ffffff;
+  }
 }
 
-.social__link--color:hover,
-.social__link--color:focus {
-  border-radius: 100px;
-  background-color: #2196f3;
-  fill: #ffffff;
-}
-.social__element:not(:last-child) {
-  margin-right: 10px;
-}
+

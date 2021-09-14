@@ -9,17 +9,16 @@
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.set-element:hover {
-  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.16), 0px 0px 4px rgba(0, 0, 0, 0.06),
-    0px 0px 1px rgba(0, 0, 0, 0.12);
-}
-.set-element:nth-last-child(3n) {
-  margin-left: 0px;
-}
-.set-element:nth-child(-n + 3) {
-  margin-top: 0px;
+  &:hover {
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.16), 0px 0px 4px rgba(0, 0, 0, 0.06),
+      0px 0px 1px rgba(0, 0, 0, 0.12);
+  }
+  &:nth-last-child(3n) {
+    margin-left: 0px;
+  }
+  &:nth-child(-n + 3) {
+    margin-top: 0px;
+  }
 }
 
 .card-content {
@@ -30,10 +29,11 @@
 
 .flex-element {
   margin-right: 30px;
-}
-.flex-element:last-child {
+  &:last-child {
   margin-right: 0px;
 }
+}
+
 .works {
   display: flex;
   padding-left: 0px;

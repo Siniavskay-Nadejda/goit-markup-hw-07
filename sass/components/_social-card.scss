@@ -5,6 +5,9 @@
 }
 .social__element {
   display: flex;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .social__link {
@@ -16,14 +19,10 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social__link:hover,
-.social__link:focus {
-  border-radius: 100px;
-  background-color: #2196f3;
-  fill: #ffffff;
-}
-.social__element:not(:last-child) {
-  margin-right: 10px;
+  &:hover,
+  &:focus {
+    border-radius: 100px;
+    background-color: #2196f3;
+    fill: #ffffff;
+  }
 }
